@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AsGuJu Pro — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand"><h1>AsGuJu Pro</h1><span>Asisten Hukum AI — Court Support</span></div>
+      <div class="mode">Interaktif • Responsive</div>
+    </header>
+
+    <main class="main">
+      <section class="left">
+        <label class="label">Deskripsi Kasus (singkat)</label>
+        <textarea id="caseDesc" placeholder="Misal: Tersangka menusuk korban setelah cekcok..."></textarea>
+
+        <div class="uploader" id="uploader">
+          <div class="drop">Drag & Drop files di sini atau klik untuk pilih (PDF, DOCX, TXT, PNG/JPG)</div>
+          <input id="fileInput" type="file" multiple />
+        </div>
+
+        <div id="fileList" class="file-list"></div>
+
+        <div class="controls">
+          <button id="analyzeBtn" class="btn primary">Analisis Cepat & Argumen</button>
+          <button id="clearBtn" class="btn">Clear</button>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="result-section scrollable-section">
+          <div id="resultArea" class="result-area">
+            <p class="hint">Hasil akan muncul di sini.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><small>© 2025 AsGuJu Pro • Demo — sebagai asisten hukum</small></footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
